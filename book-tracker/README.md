@@ -18,6 +18,7 @@ PATCH	Partial update	PATCH /users/1 → update only one field
 DELETE	Remove data	DELETE /users/1 → delete user
 
 Example REST API Endpoint
+
 GET https://api.example.com/users
 
 Response:
@@ -29,15 +30,21 @@ Response:
 Characteristics of REST:
 
 Stateless: Server does not store client state; each request is independent.
+
 Resource-based: Everything is a resource, accessible via a URL.
+
 Standard HTTP methods: CRUD operations are mapped to GET, POST, PUT, DELETE.
+
 Use of JSON: Most REST APIs use JSON to send/receive data.
 
 Integrating REST APIs in React:
 
 Use useEffect: For fetching data when the component mounts.
+
 Loading & Error states: Always handle loading and errors to improve UX.
+
 State management: For bigger apps, consider Redux or Zustand.
+
 Environment variables: Store API URLs in .env for security.
 
 Fetching Data from REST API example 
