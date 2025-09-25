@@ -1,21 +1,21 @@
- REST (Representational State Transfer)
+**REST (Representational State Transfer)**
 
 REST is an architecture style for building APIs.
 It allows cliets (like your React app) to communicate with servers using HTTP methods.
 The server exposes resources (data/entities), and the client interacts with them.
 
-HTTP Methods
+**HTTP Methods**
 Method	Action	Example
 
-GET	Read/fetch data	GET /users → fetch list of users
+**GET**	Read/fetch data	GET /users → fetch list of users
 
-POST	Create new data	POST /users → add a new user
+**POST**	Create new data	POST /users → add a new user
 
-PUT	Update existing data	PUT /users/1 → update user with ID 1
+**PUT**	Update existing data	PUT /users/1 → update user with ID 1
 
-PATCH	Partial update	PATCH /users/1 → update only one field
+**PATCH**	Partial update	PATCH /users/1 → update only one field
 
-DELETE	Remove data	DELETE /users/1 → delete user
+**DELETE**	Remove data	DELETE /users/1 → delete user
 
 Example REST API Endpoint
 
@@ -28,7 +28,7 @@ GET https://api.example.com/users
 ]
 ```
 
-Characteristics of REST:
+**Characteristics of REST:**
 
 Stateless: Server does not store client state; each request is independent.
 
@@ -38,7 +38,7 @@ Standard HTTP methods: CRUD operations are mapped to GET, POST, PUT, DELETE.
 
 Use of JSON: Most REST APIs use JSON to send/receive data.
 
-Integrating REST APIs in React:
+**Integrating REST APIs in React:**
 
 Use useEffect: For fetching data when the component mounts.
 
