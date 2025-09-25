@@ -21,11 +21,11 @@ Example REST API Endpoint
 
 GET https://api.example.com/users
 
-Response:
+```Response:
 [
   { "id": 1, "name": "Saiesha" },
   { "id": 2, "name": "Chandan" }
-]
+]```
 
 Characteristics of REST:
 
@@ -51,7 +51,7 @@ Fetching Data from REST API example
 
 can use either fetch (built-in) or axios (popular library).
 
-import React, { useEffect, useState } from 'react';
+```import React, { useEffect, useState } from 'react';
 
 function Users() {
   const [users, setUsers] = useState([]);
@@ -91,4 +91,4 @@ function Users() {
   );
 }
 
-export default Users;
+export default Users;```
