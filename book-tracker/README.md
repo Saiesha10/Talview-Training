@@ -6,13 +6,20 @@ The server exposes resources (data/entities), and the client interacts with them
 
 HTTP Methods
 Method	Action	Example
+
 GET	Read/fetch data	GET /users → fetch list of users
+
 POST	Create new data	POST /users → add a new user
+
 PUT	Update existing data	PUT /users/1 → update user with ID 1
+
 PATCH	Partial update	PATCH /users/1 → update only one field
+
 DELETE	Remove data	DELETE /users/1 → delete user
+
 Example REST API Endpoint
 GET https://api.example.com/users
+
 Response:
 [
   { "id": 1, "name": "Saiesha" },
