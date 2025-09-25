@@ -51,7 +51,6 @@ Fetching Data from REST API example
 
 can use either fetch (built-in) or axios (popular library).
 
-Using fetch
 import React, { useEffect, useState } from 'react';
 
 function Users() {
