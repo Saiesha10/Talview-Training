@@ -72,7 +72,6 @@ let p1 = new Person("Saiesha", 21);
 console.log(p1.greet());
 ```
 6. Modules
-
 split code into different files using export & import.
 
 7. Promises

@@ -7,7 +7,6 @@ let address = {
   city: "Bangalore",
   country: "India"
 };
-
 console.log("Profile Card");
 console.log("Name:", name);
 console.log("Age:", age);

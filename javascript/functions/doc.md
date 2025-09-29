@@ -95,6 +95,7 @@ console.log(operation(5, 3, (x, y) => x * y)); // 15
 ```
 10. Closures 
 
+
 A closure is when a function remembers its lexical scope even when called outside.
 ```javascript
 function outer() {

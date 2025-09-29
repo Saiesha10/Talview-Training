@@ -9,7 +9,6 @@ function divide(a, b) {
 
 let num1 = 20;
 let num2 = 5;
-
 console.log("Addition:", add(num1, num2));
 console.log("Subtraction:", subtract(num1, num2));
 console.log("Multiplication:", multiply(num1, num2));

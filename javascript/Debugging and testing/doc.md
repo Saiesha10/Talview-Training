@@ -19,6 +19,7 @@ Pauses execution in dev tools.
 let num = 10;
 debugger;  // execution stops here
 console.log(num);
+
 ```
 2. Error Handling
 

@@ -1,5 +1,4 @@
 JavaScript is single-threaded (executes one thing at a time), but many operations (like fetching data, reading files, timers) need to run without blocking the main thread.
-That’s where asynchronous programming comes in.
 
 1. Synchronous vs Asynchronous
 

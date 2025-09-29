@@ -13,6 +13,7 @@ function getWeather(city) {
   });
 }
 
+
 async function showWeather(city) {
   console.log(`Fetching weather for ${city}...`);
   try {

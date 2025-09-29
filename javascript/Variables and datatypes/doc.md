@@ -71,7 +71,6 @@ let person = {
 
 
 //Array → Ordered list of values
-
 let colors = ["red", "green", "blue"];
 
 

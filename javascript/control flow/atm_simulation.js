@@ -2,6 +2,7 @@
 let balance = 1000;
 let option = 2; // 1: Check Balance, 2: Deposit, 3: Withdraw
 
+
 switch (option) {
   case 1:
     console.log("Your balance is: $" + balance);
