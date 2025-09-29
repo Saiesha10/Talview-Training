@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+</head>
+<body>
+  <h2>My Todo List</h2>
+  <input type="text" id="taskInput" placeholder="Enter a task" />
+  <button id="addBtn">Add Task</button>
+  <ul id="taskList"></ul>
+
+  <script>
+    let addBtn = document.getElementById("addBtn");
+    let taskInput = document.getElementById("taskInput");
+    let taskList = document.getElementById("taskList");
+
+    addBtn.addEventListener("click", () => {
+      let task = taskInput.value;
+      if (task === "") return;
+
+      let li = document.createElement("li");
+      li.innerText = task;
+
+      // remove on click
+      li.addEventListener("click", () => {
+        taskList.removeChild(li);
+      });
+
+      taskList.appendChild(li);
+      taskInput.value = "";
+    });
+  </script>
+</body>
+</html>
