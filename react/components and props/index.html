@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Components Example</title>
+  <!-- React CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+  </style>
+</head>
+<body>
+  <div id="profile-root" style="margin-top: 50px;"></div>
+
+  <script type="text/babel" src="ProfileCard.jsx"></script>
+
+  <script type="text/babel">
+
+    const profileRoot = ReactDOM.createRoot(document.getElementById("profile-root"));
+    profileRoot.render(<ProfileList />);
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Component Example</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+  </style>
+</head>
+<body>
+  <div id="counter-root"></div>
+ 
+
+  <script type="text/babel" src="Counter.jsx"></script>
+
+  <script type="text/babel">
+    const counterRoot = ReactDOM.createRoot(document.getElementById("counter-root"));
+    counterRoot.render(<Counter />);
+  </script>
+</body>
+</html>
