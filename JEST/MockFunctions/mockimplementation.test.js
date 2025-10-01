@@ -8,7 +8,6 @@ console.log(myMockFn(), myMockFn(), myMockFn(), myMockFn());
 // > 'first call', 'second call', 'default', 'default'
 
 */
-
 const mockFn = jest.fn(cb => cb(null, true));
 
 mockFn((err, val) => console.log(val));
