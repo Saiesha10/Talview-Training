@@ -1,0 +1,38 @@
+meta {
+  name: Fetch Users
+  type: graphql
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}
+  body: graphql
+  auth: inherit
+}
+
+headers {
+  x-hasura-admin-secret: oPZqagM8O7pfE4H7ZvsgiWo7HGcnru36vnYTCAsmYfi9KMMvKbk3Q83hEh11VaF0
+  Content-Type: application/json
+}
+
+body:graphql {
+  query FetchUsers {
+    users {
+      id
+      name
+      email
+    }
+  }
+  
+}
+
+tests {
+  expect(bru.response.status).to.equal(200);
+  expect(bru.response.body.data.users).to.be.an('array');
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

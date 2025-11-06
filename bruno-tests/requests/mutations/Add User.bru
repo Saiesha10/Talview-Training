@@ -1,0 +1,39 @@
+meta {
+  name: Add User
+  type: graphql
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}
+  body: graphql
+  auth: inherit
+}
+
+headers {
+  x-hasura-admin-secret: oPZqagM8O7pfE4H7ZvsgiWo7HGcnru36vnYTCAsmYfi9KMMvKbk3Q83hEh11VaF0
+  Content-Type: application/json
+}
+
+body:graphql {
+  mutation AddUser {
+    insert_users(objects: { name: "John Doe", email: "john@example.com" }) {
+      returning {
+        id
+        name
+      }
+    }
+  }
+  
+}
+
+tests {
+  expect(bru.response.status).to.equal(200);
+  expect(bru.response.body.data.insert_users.returning[0].name).to.equal("John Doe");
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
