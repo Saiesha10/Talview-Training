@@ -1,0 +1,35 @@
+{
+  "name": "temporal-typescript-examples",
+  "version": "1.0.0",
+  "description": "A collection of Temporal TypeScript SDK examples covering data converters, encryption, codec server, message passing, and cancellation scopes.",
+  "main": "dist/worker.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run worker",
+    "worker": "node dist/worker.js",
+    "client": "node dist/messagePassing/client.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@temporalio/activity": "^1.10.0",
+    "@temporalio/client": "^1.10.0",
+    "@temporalio/common": "^1.10.0",
+    "@temporalio/worker": "^1.10.0",
+    "@temporalio/workflow": "^1.10.0",
+    "express": "^4.19.2",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
