@@ -1,0 +1,21 @@
+{
+  "name": "temporal-ts-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start:worker": "ts-node src/worker.ts",
+    "start:client": "ts-node src/client/startWorkflow.ts",
+    "start:schedule": "ts-node src/schedules/scheduleDemo.ts",
+    "signal:stop": "ts-node src/client/signalStop.ts"
+  },
+  "dependencies": {
+    "@temporalio/client": "^1.10.0",
+    "@temporalio/worker": "^1.10.0",
+    "@temporalio/workflow": "^1.10.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}
