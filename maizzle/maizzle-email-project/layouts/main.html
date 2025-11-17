@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="'en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+    <style>
+      @tailwind base;
+      @taiwind components;
+      @tailwind utilities;
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <table class="w-full" role="presentation">
+      <tr>
+        <td align="center">
+          <table class="w-full max-w-xl bg-white shadow-md rounded-lg" role="presentation">
+            <tr>
+              <td class="p-6">
+                <yield/>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>
