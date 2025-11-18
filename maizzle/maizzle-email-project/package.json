@@ -1,12 +1,29 @@
 {
+  "name": "maizzle-email-project",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "maizzle serve",
-    "build": "maizzle build production"
+    "build:mail": "maizzle build production",
+    "build:ts": "tsc --project tsconfig.json",
+    "worker": "node dist/worker.js",
+    "client": "node dist/client/client.js",
+    "start": "npm-run-all -p dev worker"
   },
   "dependencies": {
     "@maizzle/framework": "latest",
+    "@temporalio/client": "^1.13.2",
+    "@temporalio/worker": "^1.13.2",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^7.0.10",
+    "tailwindcss": "^3.4.1",
     "tailwindcss-preset-email": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/nodemailer": "^7.0.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
